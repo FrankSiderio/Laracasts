@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    width: 475px;
+    height: 258px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.card-left,
+.card-right {
+    padding: 20px;
+}
+
+.card-left {
+    background: linear-gradient(to bottom, #21c8f6, #637bff);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card-skill-button {
+    background: rgba(0, 0, 0, .4);
+    color: inherit;
+    text-decoration: none;
+    font-size: .7em;
+    padding: 3px 25px;
+    border-radius: 9999px;
+}
+
+.card-difficulty {
+    font-size: .8em;
+}
+
+.card-right {
+    color: #888;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #222;
+}
+
+.card-title > a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-excerpt {
+    flex: 1;
+}
+
+.card-meta {
+    display: flex;
+    font-size: .8em;
+}
+
+.card-meta > div:first-child {
+    margin-right: 1em;
+}
+
+.card-meta > div > i{
+    margin-right: 5px;
+}
