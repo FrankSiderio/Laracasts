@@ -16,6 +16,7 @@ class CreateNotificationsTable extends Migration
         Schema::create('notifications', function (Blueprint $table) {
             $table->increments('id');
             $table->string('message');
+            $table->string('link')->nullable();
             $table->boolean('mustBeLoggedIn');
             $table->timestamps();
         });
