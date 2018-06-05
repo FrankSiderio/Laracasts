@@ -41,7 +41,7 @@
 
                         <br>
 
-                        <button type="submit" class="btn btn-default">Post</button>
+                        <button type="submit" class="btn btn-primary">Post</button>
                     </div>
                 </form>
             </div>
