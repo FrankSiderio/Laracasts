@@ -21,5 +21,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/threads', 'ThreadsController@index');
 Route::get('/threads/{thread}', 'ThreadsController@show');
 Route::middleware('auth')->group(function () {
+	Route::post('/threads', 'ThreadsController@store');
     Route::post('/threads/{thread}/replies', 'RepliesController@store');
 });
+
