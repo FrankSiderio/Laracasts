@@ -3,21 +3,16 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ThreadTest extends TestCase
 {
-    use DatabaseMigrations;
-
     protected $thread;
 
     public function setUp()
     {
         parent::setUp();
 
-        $this->thread = factory('App\Thread')->create();
+        $this->thread = create('App\Thread');
     }
     /** @test */
     function a_thread_has_replies()
@@ -28,8 +23,6 @@ class ThreadTest extends TestCase
     /** @test */
     function a_thread_has_a_creator()
     {
-        $thread = factory('App\Thread')->create();
-
         $this->assertInstanceOf('App\User', $this->thread->creator);
     }
 
