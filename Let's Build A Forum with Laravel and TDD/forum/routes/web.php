@@ -15,9 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+
 Route::get('/threads', 'ThreadsController@index');
 Route::get('/threads/{thread}', 'ThreadsController@show');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->group(function () {
+    Route::post('/threads/{thread}/replies', 'RepliesController@store');
+});
