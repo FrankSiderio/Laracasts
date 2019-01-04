@@ -1,3 +1,6 @@
-@foreach($projects as $project)
+@forelse($projects as $project)
     <p>{{ $project->title }}</p>
-@endforeach
+
+@empty
+    <p>No projects yet</p>
+@endforelse
