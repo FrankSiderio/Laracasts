@@ -1,3 +1,7 @@
-<h1>{{ $project->title }}</h1>
+@extends ('layouts.app')
 
-<p>{{ $project->description }}</p>
+@section('content')
+    <h1>{{ $project->title }}</h1>
+    <div>{{ $project->description }}</div>
+    <a href="/projects">Go Back</a>
+@endsection
