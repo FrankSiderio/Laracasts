@@ -50,9 +50,8 @@
                             name="notes"
                             class="card w-full mb-4"
                             style="min-height: 200px"
-                            placeholder="Anything special you want to take note of?">
-                            {{ $project->notes }}
-                        </textarea>
+                            placeholder="Anything special you want to take note of?"
+                        >{{ $project->notes }}</textarea>
 
                         <button type="submit" class="button">Save</button>
                     </form>
