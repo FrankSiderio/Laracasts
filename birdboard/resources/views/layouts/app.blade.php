@@ -25,8 +25,8 @@
             <div class="container mx-auto">
                 <div class="flex justify-between items-center py-2">
                     <h1>
-                        <a class="text-black no-underline" href="{{ url('/') }}">
-                            {{ config('app.name', 'Laravel') }}
+                        <a class="text-black no-underline" href="{{ url('/projects') }}">
+                            <img src="/images/logo.svg" alt="Birdboard" class="relative" style="top: 2px">
                         </a>
                     </h1>
 
